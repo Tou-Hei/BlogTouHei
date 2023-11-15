@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <main>
+        <p id="title">Login</p>
+        <form action="/blog.login" method="post">
+            <div class="user-login-form">
+             <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+             </div>
+             <div class="form-row">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" required>
+             </div>
+             <div class="form-row">
+                <button class="user-login-btn">ログイン<span class="material-symbols-outlined">
+                    login
+                    </span></button>
+             </div>
+             <div class="form-row">
+                <p>※登録していない方は<a href="">こちら</a></p>
+             </div>
+            </div>
+        </form>
+        <div class="user-new">
+            <a class="user-new-btn" href="">新規登録はこちら</a>
+        </div>
+    </main>
+    
+</body>
+
+</html>
