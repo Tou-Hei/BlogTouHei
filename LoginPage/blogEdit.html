@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blogs</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<header>
+		<!--pc-->
+		<nav class="pc">
+			<div class="pc-inner">
+				<div class="pc-logo">
+					<a href=""><img src="/images/logo.png" alt=""></a>
+				</div>
+            </div>
+            <div class="blog-actions">
+              <button class="edit-blog">記事一覧</button>
+              <button class="delete-blog">ログアウト</button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="main-inner">
+			<section class="register-section">
+				<h2>ブログ編集</h2>
+				<form th:action="@{/blog/edit/process}" method="post" enctype="multipart/form-data">
+					<div class="register-section-details">
+						<div class="register-section-details_flex">
+							<div>タイトル</div>
+							<input type="text" name="blogName" th:value="${blogList.blogName}">
+						</div>
+						
+						<div class="register-section-details_flex">
+							<div>画像をアップロードしてください</div>
+							<input type="file" name="blogImage1">
+						</div>
+
+                        <div class="register-section-details_flex">
+							<div>画像をアップロードしてください</div>
+							<input type="file" name="blogImage2">
+						</div>
+
+						<div class="register-section-details_flex">
+							<div>テキスト</div>
+							<textarea name="blogDescription" placeholder="テキストを追加してください" th:text="${blogList.blogDescription}"></textarea>
+						</div>
+
+					</div>
+                    <div class="buttons">
+                        <input type="hidden" name="productId" th:value="${blogList.blogId}">
+                        <button class="register">更新</button>
+                   
+                    
+                        <input type="hidden" name="blogId" th:value="${blogList.blogId}">
+                        <button class="register">削除</button>
+                    </div>
+				</form>
+			</section>
+            
+		</div>
+	</main>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="./js/common.js"></script>
+</body>
+
+</html>

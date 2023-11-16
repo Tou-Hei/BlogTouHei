@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    overflow: hidden; 
+    background-image:url('cat.jpg');
+    background-size: cover;
+    background-repeat:repeat;
+    
+}
+
+
+@keyframes slowBlink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-6px); /* 星星向上移动的距离 */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  
+}
+
+/* CSS样式中为星星图标定义颜色 */
+#icon1 {
+    color: yellow;
+    font-size: 40px; /* 调整星星大小 */
+    position: absolute;
+  }
+  
+
+
+#title{
+    
+   
+    
+    padding-bottom: 10px; 
+    font-size: 100px;
+    color:white;
+    margin-bottom: 10px;
+    font-family: Agbalumo;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Agbalumo;
+    font-size: 100px;
+}
+
+
+
+.user-login-form{
+    background-color:rgba(182, 227, 255, 0.473);
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px 0;
+    color:ghostwhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15%;
+   
+    
+}
+
+
+.form-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    font-size: 20px;
+    font-family: Agbalumo;
+    
+}
+
+label{
+    width: 150px;
+}
+
+#email,#password{
+    width: 220px;
+    height: 30px;
+}
+
+.user-login-btn{
+    background-color: rgba(80, 255, 226, 0.872);
+    width: 150px;
+    height: 44px;
+    border-radius: 22px;
+    border-color: rgb(248, 248, 244);
+    font-size: 30px;
+    color:rgb(249, 250, 252);
+    font-family: 'Monomaniac One', sans-serif;
+    animation: twinkle 1s infinite;
+    animation: slowBlink 3s infinite;
+}
+.user-register-btn{
+    background-color: rgba(80, 255, 226, 0.872);
+    width: 150px;
+    height: 44px;
+    border-radius: 22px;
+    border-color: rgb(248, 248, 244);
+    font-size: 30px;
+    color:rgb(249, 250, 252);
+    font-family: Agbalumo;
+    animation: twinkle 1s infinite;
+    animation: slowBlink 3s infinite;
+}
+
+.form-row a{
+  color: rgb(227, 17, 17);
+  text-decoration: none;
+  font-family: Agbalumo;
+  
+}
+.user-new{
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+.user-new-btn{
+    text-decoration: none;
+    background-color: #f3e81ae0;
+    padding: 20px ;
+    border-radius: 22px;
+    color: rgb(245, 5, 5);
+    
+    
+}
+
