@@ -41,8 +41,10 @@ body{
 /* CSS样式中为星星图标定义颜色 */
 #icon1 {
     color: yellow;
-    font-size: 40px; /* 调整星星大小 */
+    font-size: 50px; /* 调整星星大小 */
     position: absolute;
+    animation: twinkle 1s infinite;
+    animation: slowBlink 3s infinite;
   }
   
 
@@ -75,7 +77,8 @@ h1{
     padding: 16px 0;
     color:ghostwhite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 15%;
+    border-radius: 5%;
+    
    
     
 }
